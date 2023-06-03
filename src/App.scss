@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #3B4664;
+}
+
+.col{
+  color: #FEFFFD;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+  display: flex;
+  margin:  150px auto 0;
+  gap: 20px;
+  flex-direction: column;
+  width: 350px;
+}
+
+.ans{
+  height: 80px;
+  background-color: #181F32;
+  border-radius: 5px;
+  overflow: hidden;
+  padding:20px;
+}
+
+.displayed{ 
+  height: 60%;
+  background-color: #181F32;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 20px;
+}
+.partial{
+  height: 40%;
+  background-color: #181F32;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.displayed-val{
+  float: right;
+  font-size: 28px;
+  color: #FEFFFD;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.partial-val{
+  float: right;
+  font-size: 14px;
+  color: #FEFFFD;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.numbers{
+  display: grid;
+  height: 350px;
+  background-color: #252D44;
+  border-radius: 5px;
+  grid-template-rows: 65px 65px 65px 65px;
+  grid-template-columns: 80px 80px 80px 80px;
+  gap: 5px;
+  padding: 15px;
+}
+
+.btn{
+  width: 60px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #EAE3DB;
+  color: #474956;
+  cursor: pointer;
+  transform: scale(0.9);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.del-btn{
+  width: 60px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #647299;
+  color: #FBFFFF;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: scale(0.9);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.res-btn{
+  width: 145px;
+  background-color: #647299;
+  color: #FBFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transform: scale(0.95);
+  font-size: 16px;  
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.equal-btn{
+  width: 145px;
+  margin-left: 85px;
+  background-color: #D13F30;
+  color: #FBFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transform: scale(0.95);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn:hover{
+  transform: scale(1);
+}
+.del-btn:hover{
+  transform: scale(1);
+}
+.equal-btn:hover{
+  transform: scale(1);
+}
+.res-btn:hover{
+  transform: scale(1);
+}
+
+
+
+
