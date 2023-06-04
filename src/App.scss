@@ -16,15 +16,15 @@
   $btn-background: #EAE3DB;
   $btn-color: #474956;
   $btn-shadow: #B6A49A;
-  $del-background: #647299;
-  $del-color: #FBFFFF;
-  $del-shadow: #414E71;
-  $res-background: #647299;
-  $res-color: #FBFFFF;
-  $res-shadow: #414E71;
+  $del-res-background: #647299;
+  $res-del-color: #FBFFFF;
+  $res-del-shadow: #414E71;
   $equal-background: #D13F30;
   $equal-color: #FBFFFF;
   $equal-shadow: #96271C;
+  $res-del-hover: #A2B3E1;
+  $btn-hover: #FFFFFF;
+  $equal-hover: #F96C5B
 
 }
 
@@ -186,11 +186,11 @@ body{
         height: 40px;
         border: none;
         border-radius: 5px;
-        background-color: var(--del-background);
-        color: var(--del-color);
+        background-color: var(--res-del-background);
+        color: var(--res-del-color);
         text-transform: uppercase;
         cursor: pointer;
-        box-shadow: 0 4px 0 var(--del-shadow);
+        box-shadow: 0 4px 0 var(--res-del-shadow);
         transform: scale(0.9);
         font-size: 16px;
         font-weight: 600;
@@ -198,12 +198,12 @@ body{
       
       .res-btn{
         width: 145px;
-        background-color: var(--res-background);
-        color: var(--res-color);
+        background-color: var(--res-del-background);
+        color: var(--res-del-color);
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        box-shadow: 0 4px 0 var(--res-shadow);
+        box-shadow: 0 4px 0 var(--res-del-shadow);
         transform: scale(0.95);
         font-size: 16px;  
         font-weight: 600;
@@ -226,15 +226,19 @@ body{
       
       .btn:hover{
         transform: scale(1);
+        background-color: var(--btn-hover);
       }
       .del-btn:hover{
         transform: scale(1);
+        background-color: var(--res-del-hover);
       }
       .equal-btn:hover{
         transform: scale(1);
+        background-color: var(--equal-hover);
       }
       .res-btn:hover{
         transform: scale(1);
+        background-color: var(--res-del-hover)
       }
     }
   }

@@ -5,13 +5,33 @@ function App(){
   const [displayed, setDisplayed] = useState("")
   const [operation, setOperation] = useState("")
   const [prev, setPrev] = useState()
-  const [toggle, setToggle] = useState(false)
-
-
+  const [def, setDef] = useState(true)
 
   useEffect(() =>{
+    const root = document.documentElement
+    root.style.setProperty('--body-color', def? '#3B4664': '#E6E6E6')
+    root.style.setProperty('--slider-background', def? '#252D44': '#D7CBCB')
+    root.style.setProperty('--slider-toggle', def? '#CA4330': '#F58E3F')
+    root.style.setProperty('--outside-color', def? '#643B5F': '#C7CEC3')
+    root.style.setProperty('--outside-shadow', def? '#4D2D49': '#c7c7c3')
+    root.style.setProperty('--col-val-theme', def? '#FEFFFD': '#3C3C3A')
+    root.style.setProperty('--ans-partial', def? '#181F32': '#EEEEEE')
+    root.style.setProperty('--numbers', def? '#252D44': '#EEEEEE')
+    root.style.setProperty('--btn-background', def? '#EAE3DB': '#E5E4E0')
+    root.style.setProperty('--btn-color', def? '#474956': '#36362E')
+    root.style.setProperty('--btn-shadow', def? '#B6A49A': '#A59C93')
+    root.style.setProperty('--res-del-background', def? '#647299': '#388187')
+    root.style.setProperty('--res-del-color', def? '#FBFFFF': '#FBFFFF')
+    root.style.setProperty('--res-del-shadow', def? '#414E71': '#1E616A')
+    root.style.setProperty('--equal-background', def? '#D13F30': '#C85401')
+    root.style.setProperty('--equal-color', def? '#FBFFFF': '#FFFCFA')
+    root.style.setProperty('--equal-shadow', def? '#96271C': '#8A3B00')
+    root.style.setProperty('--res-del-hover', def? '#A2B3E1': '#62B4BF')
+    root.style.setProperty('--btn-hover', def? '#FFFFFF': '#FFFFFF')
+    root.style.setProperty('--equal-hover', def? '#F96C5B': '#FF8B38')
 
-  }, [toggle])
+
+  }, [def])
 
   const concat = (e) =>{
     var val = e.target.value
@@ -74,7 +94,7 @@ function App(){
       <div className='toggle-div'>
         <h5 className='theme'>theme</h5>
       <label className="switch">
-        <input type="checkbox" onClick={()=> setToggle(!toggle)}/>
+        <input type="checkbox" onClick={()=> setDef(!def)}/>
         <span className="slider round"></span>
       </label>
       </div>
